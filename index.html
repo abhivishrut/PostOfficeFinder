@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">Post Office Finder</div>
+        <button class="navbar-toggle" id="navbarToggle">☰</button>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Card: Search Input -->
+        <div class="card card-left" id="search">
+            <h1>📮 Post Office Finder</h1>
+            <p>Effortlessly find your post office details by simply entering your pincode below.</p>
+            <input type="text" id="pincode" placeholder="Enter Pincode">
+            <button id="searchButton" onclick="fetchPostOfficeData()">Search</button>
+        </div>
+
+        <!-- Right Card: Search Results -->
+        <div class="card card-right" id="result">
+            <h2>Search Results</h2>
+            <div class="result">
+                <p>Your results will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="about">
+        <p>Developed by:<a class="codewati" href="https://abhivishrut.github.io/codewati/" target="_blank"> Codewati tech private limited</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

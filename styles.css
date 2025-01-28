@@ -1,0 +1,262 @@
+/* General Reset */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #efeeee;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+    height: 60px; 
+    box-sizing: border-box;
+}
+
+
+body {
+    padding-top: 60px; 
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 10px; 
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Navbar Links Items */
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 5px 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+}
+
+/* Toggle Button for Smaller Screens */
+.navbar-toggle {
+    display: none;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* Container Styling */
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+
+/* Card Styling */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-left {
+    flex: 1;
+    min-width: 300px; 
+    max-width: 350px;
+}
+
+.card-right {
+    flex: 2;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 300px; 
+}
+
+/* Heading and Input Styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #666;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Result Box Styling */
+.result {
+    margin-top: 15px;
+}
+
+.post-office {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.post-office h3 {
+    margin: 0 0 10px;
+    color: #0056b3;
+}
+
+.post-office p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar-links {
+        display: none; 
+        flex-direction: column;
+        background-color: #007bff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-right {
+        max-height: 300px; 
+    }
+
+    button {
+        width: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+.codewati{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.codewati:hover{
+    color: #0056b3;
+}
